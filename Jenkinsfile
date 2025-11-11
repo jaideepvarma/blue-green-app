@@ -9,11 +9,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
-    steps {
-        git branch: 'main', url: 'https://github.com/jaideepvarma/blue-green-app.git'
-    }
-}
-
+            steps {
+                git branch: 'main', url: 'https://github.com/jaideepvarma/blue-green-app.git'
+            }
         }
 
         stage('Build Docker Image') {
